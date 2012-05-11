@@ -2,13 +2,13 @@ public class CheckersPiece {
    private int horizPos;
    private int vertPos;
    private boolean isKing;
-   private CheckersClient owner;
+   private boolean isRed;
    
-   public CheckersPiece(int hPos, int vPos, boolean king, CheckersClient o) {
+   public CheckersPiece(int hPos, int vPos, boolean king, boolean isRed) {
       horizPos = hPos;
       vertPos = vPos;
       isKing = king;
-      owner = o;
+      this.isRed = isRed;
    }
 
    public int getHorizPos() {
@@ -35,12 +35,7 @@ public class CheckersPiece {
       isKing = king;
    }
 
-   public CheckersClient getOwner() {
-      return owner;
-   }
-
-   public String toString() {
-      return (horizPos-32) + " " + (vertPos-32) + " " + 
-	 (isKing ? "King" : "Normal") + " " + owner.getHandle();
+   public boolean getIsRed() {
+      return this.isRed;
    }
 }
