@@ -123,8 +123,16 @@ public class Game extends Applet implements ActionListener {
     public void actionPerformed(ActionEvent evt) {
         if ( evt.getSource() == start ) {
             startCommand();
+            this.terminate.setEnabled(true);
+            this.start.setEnabled(false);
+            this.handle.setEnabled(false);
+            this.hosts.setEnabled(false);
         } else if ( evt.getSource() == terminate ) {    
             terminate();
+            this.terminate.setEnabled(false);
+            this.start.setEnabled(true);
+            this.handle.setEnabled(true);
+            this.hosts.setEnabled(true);
         } else if ( evt.getSource() == updatePlayerList ) {
             updatePlayerList();
         } else if ( evt.getSource() == invitePlayer ) {

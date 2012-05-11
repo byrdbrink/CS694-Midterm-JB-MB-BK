@@ -129,4 +129,8 @@ public class CheckersServer extends Thread {
    public void gameDrewBy(String handle) {
       scoreboard.gameDrewBy(handle);
    }
+
+    void removeChecker(int xpos, int ypos) {
+        throw new UnsupportedOperationException("Not yet implemented");
+    }
 }

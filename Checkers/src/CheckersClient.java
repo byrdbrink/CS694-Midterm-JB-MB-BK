@@ -369,4 +369,8 @@ public class CheckersClient extends Thread {
 			clientSocket.getPort() + " " + clientHandle + " " + 
 			new Date() + "] ");
    }
+
+    void removeChecker(int xpos, int ypos) {
+        throw new UnsupportedOperationException("Not yet implemented");
+    }
 }

@@ -149,5 +149,9 @@ class Board extends Canvas implements MouseMotionListener, MouseListener {
 //            remove.setText("Stop Removing");               // 6
 //        }                                                     // 6
 //    }                                                        // 6
+
+    void kingMe(int xpos, int ypos) {
+        throw new UnsupportedOperationException("Not yet implemented");
+    }
 }
 
